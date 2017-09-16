@@ -34,8 +34,8 @@ public class AweraController {
 
         System.out.println("the to number is  " + aweraMessage.getToNumber());
         Twilio.init(ACCOUNT_SID,AUTH_TOKEN);
-        Message message = Message.creator(new PhoneNumber("+16414513138"),
-                new PhoneNumber("+16194040149"),aweraMessage.toString()).create();
+        Message message = Message.creator(new PhoneNumber(aweraMessage.getToNumber()),
+                new PhoneNumber(twiloNumber),aweraMessage.toString()).create();
 
         return message.getSid();
 
