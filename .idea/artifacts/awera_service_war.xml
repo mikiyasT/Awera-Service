@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="awera-service:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="awera-service-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="awera-service:war exploded" />
+    </root>
+  </artifact>
+</component>
