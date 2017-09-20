@@ -1,3 +1,8 @@
+net/awera/service/AweraServiceImpl.class
+net/awera/model/AweraMessage.class
+net/awera/repository/Awera15BirrCardRepository.class
+net/awera/model/Awera15BirrCard.class
+net/awera/service/AweraService.class
 net/awera/AweraServiceApplication.class
 net/awera/controller/AweraController.class
-net/awera/model/AweraMessage.class
+net/awera/repository/AweraMessageRepository.class

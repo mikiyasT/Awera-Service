@@ -1,13 +1,33 @@
 package net.awera.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 /**
  * Created by m0t00d3 on 9/13/17.
  */
 
+@Entity
+@Table(name = "AweraMessage")
 public class AweraMessage {
 
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "message_id")
+    private int messageId;
+
+    @Column(name = "to_number")
     private String toNumber;
+
+    @Column(name = "message")
     private String shortMessage;
+
+    @Column(name = "card_no")
     private String cardNumber;
 
     public AweraMessage() {
