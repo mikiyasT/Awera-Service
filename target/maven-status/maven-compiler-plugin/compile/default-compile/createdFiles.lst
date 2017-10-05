@@ -1,3 +1,4 @@
+net/awera/model/AweraStatus.class
 net/awera/service/AweraServiceImpl.class
 net/awera/model/AweraMessage.class
 net/awera/repository/Awera15BirrCardRepository.class

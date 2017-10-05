@@ -6,7 +6,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import java.time.OffsetDateTime;
 import java.util.Date;
 
 /**
@@ -32,7 +31,7 @@ public class Awera15BirrCard {
     private String status;
 
     @Column(name = "used_at")
-    private OffsetDateTime usedAt;
+    private Date usedAt;
 
     @Column(name = "handlingStation")
     private String handlingStation;
@@ -42,7 +41,7 @@ public class Awera15BirrCard {
 
     }
 
-    public Awera15BirrCard(String cardNumber, String used, String status, OffsetDateTime usedAt, String handlingStation) {
+    public Awera15BirrCard(String cardNumber, String used, String status, Date usedAt, String handlingStation) {
         this.cardNumber = cardNumber;
         this.used = used;
         this.status = status;
@@ -82,11 +81,11 @@ public class Awera15BirrCard {
         this.status = status;
     }
 
-    public OffsetDateTime getUsedAt() {
+    public Date getUsedAt() {
         return usedAt;
     }
 
-    public void setUsedAt(OffsetDateTime usedAt) {
+    public void setUsedAt(Date usedAt) {
         this.usedAt = usedAt;
     }
 
